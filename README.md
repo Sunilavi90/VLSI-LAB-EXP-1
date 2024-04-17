@@ -1,10 +1,13 @@
 # VLSI-LAB-EXPERIMENTS
-AIM:
+# AIM:
 To simulate and synthesis Logic Gates,Adders and Subtractor using vivado 2023.2.
-APPARATUS REQUIRED:
+
+# APPARATUS REQUIRED:
+
 vivado 2023.2
 
-PROCEDURE:
+# PROCEDURE:
+
 STEP:1 Start the vivado software, Select and Name the New project.
 
 STEP:2 Select the device family, device, package and speed.
@@ -18,7 +21,8 @@ STEP:5 Select the run simulation adn then run Behavioral Simulation in the Sourc
 STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.
 
 STEP:7 compare the output with truth table.
-Logic Diagram :
+
+# Logic Diagram :
 
 Logic Gates:
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-1/assets/165141104/4fe42d1d-c46d-48d4-bfbe-57e1f26654b4)
@@ -37,9 +41,11 @@ Full adder:
 
 
 Half Subtractor:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-1/assets/165141104/756c5ce4-fcb8-41a3-9ef9-cf1cc4102829)
 
 Full Subtractor:
+
 ![image](https://github.com/priyangi123/VLSI-LAB-EXP-1/assets/165141104/ea5ad8fe-0a7c-423e-9fa4-f026a94b7ac8)
 
 8 Bit Ripple Carry Adder
@@ -53,6 +59,7 @@ Full Subtractor:
 VERILOG CODE:
 
 LOGIC GATES:
+
 module logic(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate );
 
 input a,b;
@@ -76,6 +83,7 @@ not(notgate,a);
 endmodule
 
 HALF ADDER:
+
 module HalfAdder(a,b,sum,carry);
 
 input a,b;
@@ -89,6 +97,7 @@ and (carry,a,b);
 endmodule
 
 FULL ADDER:
+
 module FA(a,b,cin,sum,cout);
 
 input a,b,cin;
@@ -110,6 +119,7 @@ or g5(cout,w2,w3);
 endmodule
 
 HALF SUBTRACTOR:
+
 module halfsubtractor(a,b,diff,borrow);
 
 input a,b;
@@ -123,6 +133,7 @@ and g2(borrow,~a,b);
 endmodule
 
 FULL SUBTRACTOR:
+
 module full_sub(a,b,bin,diff,borrow);
 
 input a,b,bin;
@@ -144,6 +155,7 @@ and g5(w3,~w1,bin);
 endmodule
 
 8 BIT RIPPLE CARRY ADDER:
+
 module fa(a,b,c,sum,carry);
 
 input a,b,c;
@@ -190,6 +202,7 @@ endmodule
 OUTPUT:
 
 LOGIC GATES:
+
 <img width="838" alt="LOGIC" src="https://github.com/priyangi123/VLSI-LAB-EXP-1/assets/165141104/4ef0e976-4225-4718-8db0-7f63002f5523">
 
 HALF ADDER:
